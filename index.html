@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="main w-full">
+        <nav class="w-full fixed top-0 left-0 px-10 py-3 flex justify-between items-center">
+          <img class="w-[120px] contrast-100 saturation-60"  src="https://i.pinimg.com/originals/63/88/e1/6388e1c9998627898fe7241187ab1a6d.png"
+          alt="">
+          <div class="flex space-x-8">
+            <a href="#" class="text-white font-semibold hover:text-yellow-400 transition">Home</a>
+            <a href="#" class="text-white font-semibold hover:text-yellow-400 transition">Games</a>
+            <a href="#" class="text-white font-semibold hover:text-yellow-400 transition">Community</a>
+            <a href="#" class="text-white font-semibold hover:text-yellow-400 transition">News</a>
+            <a href="#" class="text-white font-semibold hover:text-yellow-400 transition">Contact</a>
+          </div>
+        </nav>
+        <div class="w-full h-screen overflow-hidden">
+          <img class="absolute w-[90%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-[25%] contrast-100 saturation-60"  src="https://i.pinimg.com/originals/63/88/e1/6388e1c9998627898fe7241187ab1a6d.png"
+           alt="">
+           <div class="w-[50rem] h-[50rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1] rounded-full bg-yellow-200 blur-3xl"></div>
+          <canvas id="canvas"></canvas>
+        </div>
+        <div class="w-full h-screen relative bg-black">
+            <div class="w-full h-60 absolute top-0 left-0 bg-gradient-to-b from black to-white"></div>
+        </div>
+    </div>
+    
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
